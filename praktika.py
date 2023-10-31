@@ -1,14 +1,7 @@
-#Пробное задание из лекции
-d=int(input())
-e=int(input())
-a=int(input())
-b=int(input())
-c=int(input())
-n=[]
-if d<=a<=e or e<=a<=d:
-    n.append(a)
-if d<=b<=e or e<=b<=d:
-    n.append(b)
-if d<=c<=e or e<=c<=d:
-    n.append(c)
-print(n)
+counter=0
+for a in range(1, 100):
+    for b in range(1, 100):
+        for c in range(1, 100):
+            for d in range(1, 100):
+                if a**3+b**3==c**3+d**3 and a != b and a != c and a != d and b!= c and b != d and c != d:
+                    print(a**3+b**3)
