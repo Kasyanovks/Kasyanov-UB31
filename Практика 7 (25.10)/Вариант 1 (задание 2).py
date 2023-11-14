@@ -10,6 +10,6 @@ def sar():
     sum3=sum(c)
     sa3=sum3/15
     print(sum1, sa)
-    print(sum2, sa)
+    print(sum2, sa2)
     print(sum3, sa3)
 sar()
