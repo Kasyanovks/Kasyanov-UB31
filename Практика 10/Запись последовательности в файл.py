@@ -7,7 +7,7 @@ for i in range(n):
     for j in range(m):
         b.append(randint(1,100))
     a.append(b)
-f = open(r'C:\Users\konst\OneDrive\Документы\Языки програмирования\Програмирование', 'w')
+f = open(r'Kasyanov_Konstantin_UB-31_vvod.txt', 'w')
 for i in a:
     for j in i:
         f.write(str(j))
