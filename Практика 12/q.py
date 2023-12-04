@@ -2,14 +2,13 @@ import requests
 import json
 from tkinter import *
 def information_button():
-    name_repository =text.get()
-    link = f"https://api.github.com/users/{name_repository}"
+    name = text.get()
+    link = f"https://api.github.com/users/{name}"
     response = requests.get(link).json()
     keys = ['company','created_at','email','id','name','url']
-    response_modified = {}
-    for element in keys:
-        response_modified[element] = response[element]
-
+    response_new = {}
+    for i in keys:
+        response_new[i] = response[i]
     with open('information.txt','w') as file:
         json.dump(response_modified,file,indent=3)
 window = Tk()
