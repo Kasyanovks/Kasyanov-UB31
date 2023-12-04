@@ -5,7 +5,6 @@ def information_button():
     name_repository =text.get()
     link = f"https://api.github.com/users/{name_repository}"
     response = requests.get(link).json()
-
     keys = ['company','created_at','email','id','name','url']
     response_modified = {}
     for element in keys:
