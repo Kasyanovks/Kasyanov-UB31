@@ -3,8 +3,8 @@ import json
 from tkinter import *
 def information_button():
     name_repository =text.get()
-    url = f"https://api.github.com/users/{name_repository}"
-    response = requests.get(url).json()
+    link = f"https://api.github.com/users/{name_repository}"
+    response = requests.get(link).json()
 
     keys = ['company','created_at','email','id','name','url']
     response_modified = {}
